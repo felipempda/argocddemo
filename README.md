@@ -2,14 +2,14 @@
 
 Simple projet for testing argocd.
 
-# Creating app
+## Creating app
 
 kubectl create namespace testapp
 
 argocd app create myapp --repo https://github.com/felipempda/argocddemo.git --path app --dest-server https://kubernetes.default.svc --dest-namespace testapp
 
 
-# View app details
+## View app details
 
 argocd app get myapp
 
@@ -31,7 +31,7 @@ GROUP  KIND        NAMESPACE  NAME   STATUS     HEALTH   HOOK  MESSAGE
 apps   Deployment  testapp    myapp  OutOfSync  Missing
 ```
 
-# Sync app
+## Sync app
 
 argocd app sync myapp
 

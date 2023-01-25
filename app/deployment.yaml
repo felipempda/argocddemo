@@ -34,7 +34,7 @@ spec:
         name: nginx
         resources: {}
         command:
-        - sleepknot
+        - sleep
         args:
         - "8888888888"
 
